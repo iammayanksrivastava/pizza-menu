@@ -5,9 +5,9 @@ function Footer() {
   const isOpen = hour >= openHour && hour < closeHour;
 
   if (isOpen) {
-    return <footer>We're currently Open</footer>;
+    return <footer className="footer">We're currently Open</footer>;
   } else {
-    return <footer>We're currently Closed</footer>;
+    return <footer className="footer">We're currently Closed</footer>;
   }
 }
 export default Footer;
