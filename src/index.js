@@ -56,6 +56,7 @@ function App() {
       <Header />
       <Menu />
       <Footer />
+      <button className="btn">Order Online</button>
     </div>
   );
 }

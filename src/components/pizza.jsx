@@ -1,9 +1,13 @@
-function Pizza() {
+function Pizza(props) {
+  console.log(props);
   return (
-    <div>
-      <img src="pizzas/spinaci.jpg" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    <div className="pizza">
+      <img src={props.photoName} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
+      </div>
     </div>
   );
 }
