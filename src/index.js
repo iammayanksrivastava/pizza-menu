@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+//Import Components
 import Footer from "./components/footer";
 import Menu from "./components/menu";
 import Header from "./components/header";
@@ -52,7 +52,7 @@ const pizzaData = [
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />

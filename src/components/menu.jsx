@@ -3,8 +3,10 @@ import Pizza from "./pizza";
 
 function Menu() {
   return (
-    <div>
+    <div className="menu">
       <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
       <Pizza />
     </div>
   );
