@@ -1,9 +1,11 @@
 import "../index.css";
 
-function Order(props) {
+function Order({ closeHour, openHour }) {
   return (
     <div className="order">
-      <p>We're Open until {props.closeHour}:00. Order Online</p>
+      <p>
+        We're Open from {openHour}:00 & {closeHour}:00. Order Online
+      </p>
       <button className="btn">Order Online</button>
     </div>
   );
@@ -18,7 +20,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <Order closeHour={closeHour} />
+        <Order closeHour={closeHour} openHour={openHour} />
       ) : (
         <p>
           We are happy to welcome you between {openHour}:00 and {closeHour}:00
